@@ -22,27 +22,20 @@ const sumOfAllIntegers = (arr) => {
       //if it is an even number, push it into the even array created above
     }
   }
-  // odd.map((k) => {
-  //   parseInt(k);
-  //   return (oddSum += k);
-  //   //for each of the items in the odd array, parse the value to an integer value and add it to the oddsum letiable created above
-  // });
+
+    //for each of the items in the odd array, parse the value to an integer value and add it to the oddsum letiable created above
   for (val of odd) {
     parseInt(val);
     oddSum += val;
   }
-  // even.map((k) => {
-  //   parseInt(k);
-  //   return (evenSum += k);
-  //   //for each of the items in the odd array, parse the value to an integer value and add it to the oddsum letiable created above
-  // });
+ 
+     //for each of the items in the odd array, parse the value to an integer value and add it to the oddsum letiable created above
+ 
   for (val of even) {
     parseInt(val);
     evenSum += val;
   }
-  // result.push(evenSum);
   customPush(result, evenSum);
-  // result.push(oddSum);
   customPush(result, oddSum);
   //push the sum of the even and the odd numbers in the result array and return it
   return console.log(
